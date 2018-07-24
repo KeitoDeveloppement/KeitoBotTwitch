@@ -69,13 +69,13 @@ bot.on('chat', function(channel, userstate, message, self) {
     if(message === "!help") {
         bot.action('Keito_', "Voici la liste de mes commandes :\n\n!discord : Affiche le serveur Discord de Keito.\n\n!youtube : Affiche la chaîne YouTube de Keito.\n!twitter : Affiche le Twitter de Keito.\n!sens : Affiche les sensiblitées de Keito.\n!res : Affiche les résolutions de Keito en jeu.\n!param : Affiche les paramètres de Keito en jeu !\n!shop : Affiche le shop du jour sur Fortnite.\n!uptime : Cette commande vous indique depuis combien de temps Keito est en live.\n!video : Affiche la dernière vidéo de Keito !");
     }
-    if(message === "!discord") {
+    if(message.startsWith("!discord")) {
         bot.action('Keito_', "Le Discord de Keito est : https://discord.gg/B55ujrk");
     }
-    if(message === "!youtube") {
+    if(message.startsWith("!youtube")) {
         bot.action('Keito_', "La chaîne YouTube de Keito est : https://www.youtube.com/channel/UCu283gUmsWZ7TSbKYX2CpFw");
     }
-    if(message === "!twitter") {
+    if(message.startsWith("!twitter")) {
         bot.action('Keito_', "Le Twitter de Keito est : https://twitter.com/Im_Keito");
     }
     if(message === "!shop") {
