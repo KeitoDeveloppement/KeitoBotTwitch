@@ -14,7 +14,7 @@ var options = {
     },
     identity: {
         username: "KeitoBot_",
-        password: "oauth:3qmrwfoge3da1mqr8cjpl88qzzvnsk"
+        password: process.env.TOKEN
     },
     channels: ["Keito_"],
 };
