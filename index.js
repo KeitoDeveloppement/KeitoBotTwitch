@@ -67,7 +67,7 @@ bot.on('chat', function(channel, userstate, message, self) {
         }
     }
     if(message === "!help") {
-        bot.action('Keito_', "Voici la liste de mes commandes :\n\n!discord : Affiche le serveur Discord de Keito.\n\n!youtube : Affiche la chaîne YouTube de Keito.\n!twitter : Affiche le Twitter de Keito.\n!sens : Affiche les sensiblitées de Keito.\n!res : Affiche les résolutions de Keito en jeu.\n!param : Affiche les paramètres de Keito en jeu !\n!shop : Affiche le shop du jour sur Fortnite.\n!uptime : Cette commande vous indique depuis combien de temps Keito est en live.\n!video : Affiche la dernière vidéo de Keito !");
+        bot.action('Keito_', "Voici la liste de mes commandes :\n\n!discord : Affiche le serveur Discord de Keito.\n\n!youtube : Affiche la chaîne YouTube de Keito.\n!twitter : Affiche le Twitter de Keito.\n!sens : Affiche les sensiblitées de Keito.\n!res : Affiche les résolutions de Keito en jeu.\n!param : Affiche les paramètres de Keito en jeu !\n!shop : Affiche le shop du jour sur Fortnite.\n!dons : Permet de donner de l'argent à Keito\n!uptime : Cette commande vous indique depuis combien de temps Keito est en live.\n!video : Affiche la dernière vidéo de Keito !");
     }
     if(message.startsWith("!discord")) {
         bot.action('Keito_', "Le Discord de Keito est : https://discord.gg/B55ujrk");
@@ -95,6 +95,9 @@ bot.on('chat', function(channel, userstate, message, self) {
     }
     if(message === "!param") {
         bot.action('Keito_', "Voici les paramètres de Keito : https://clips.twitch.tv/BelovedDelightfulToadFUNgineer")
+    }
+    if(message === "!dons") {
+        bot.action('Keito_', "Si vous voulez soutenir Keito, cliquez sur ce lien : https://streamlabs.com/keito_")
     }
     if(message === "!followon") {
         if (userstate.mod) {
