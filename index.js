@@ -85,7 +85,7 @@ bot.on('chat', function(channel, userstate, message, self) {
         bot.action('Keito_', "Fortnite : 800 DPI et 0,09 / H1Z1 : 800 DPI et 9% dans tout")
     }
     if(message === '!res') {
-        bot.action('Keito_', "Fortnite : 1440x900 / H1Z1 : 1440x900")
+        bot.action('Keito_', "Fortnite : 1440x1080 / H1Z1 : 1440x900")
     }
     if(message === "!uptime") {
         request('https://decapi.me/twitch/uptime?channel=Keito_', function (error, response, body, message) {
