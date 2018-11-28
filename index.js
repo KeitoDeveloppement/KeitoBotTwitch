@@ -94,8 +94,8 @@ bot.on('chat', function(channel, userstate, message, self) {
         bot.action('Keito_', "Fortnite : 1440x900 / H1Z1 : 1440x900")
     }
     if(message === "!uptime") {
-        if (channel["Keito_"] == null) { 
-            reply("Keito n'est pas en live !");
+        if (channel["Keito_"] == null) {
+            bot.action('Keito_', "Keito n'est pas en live !");
             return;
         } else {
             request('https://decapi.me/twitch/uptime?channel=Keito_', function (error, response, body, message) {
